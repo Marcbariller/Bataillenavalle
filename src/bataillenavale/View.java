@@ -5,25 +5,29 @@ public class View {
 	public static void showMy(int map[][]) {
 		// Change symbol border here
 		String border = "+";
-		for (int i = 0; i < map.length; i++) {
+		int x = 0;
+		int y = 0;
+		for (int i = 0; i < map[0].length + 2; i++) {
 			System.out.print(border);
 		}
 		System.out.println();
 
-		for (int i = 0; i < map.length - 2; i++) {
-			for (int j = 0; j <= map[i].length; j++) {
-
+		for (int i = 0; i < map.length; i++) {
+			for (int j = 0; j <= map[i].length + 1; j++) {
+				
 				if (j == 0) {
 					System.out.print(border);
-				} else if (j == map.length - 1) {
+				} else if (j == map[i].length + 1) {
 					System.out.print(border);
 				} else {
-					System.out.print(" ");
+					// Ne se deplace pas encore dans la map
+					System.out.print(map[x][y]);
+
 				}
 			}
 			System.out.println();
 		}
-		for (int i = 0; i < map.length; i++) {
+		for (int i = 0; i < map[map.length -1].length + 2; i++) {
 			System.out.print(border);
 		}
 		System.out.println();
