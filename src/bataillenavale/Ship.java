@@ -45,4 +45,5 @@ public class Ship {
     public void setx(int x) {
         Ship.x = x;
     }
+
 }
