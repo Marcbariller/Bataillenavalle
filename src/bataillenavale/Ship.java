@@ -1,14 +1,6 @@
 package bataillenavale;
 
 public class Ship {
-	//TODO x,y , id , width
-	
-	private int x; 
-	private int y;
-	private String name;
-	private int width;
-	
-	
 
     public static int iD; //the type of the ship
     public static int x; //the row where the ship start
