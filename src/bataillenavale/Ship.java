@@ -2,47 +2,47 @@ package bataillenavale;
 
 public class Ship {
 
-    private int iD; //the type of the ship
-    private int startRow; //the row where the ship start (for painting)
-    private int startCol; //the column where the ship start (for painting)
-    private int length;//length of the ship
+    public static int iD; //the type of the ship
+    public static int x; //the row where the ship start
+    public static int y; //the column where the ship start
+    public static int width;//width of the ship
 
-    public Ship(int iD, int startCol,int startRow, int length) {
-        this.iD = iD;
-        this.startRow = startRow;
-        this.startCol = startCol;
-        this.length = length;
+    public Ship(int iD, int y,int x, int width) {
+        Ship.iD = iD;
+        Ship.x = x;
+        Ship.y = y;
+        Ship.width = width;
     }
 
     public int getLength() {
-        return length;
+        return width;
     }
 
-    public void setLength(int lenght) {
-        this.length = lenght;
+    public void setLength(int width) {
+        Ship.width = width;
     }
 
-    public int getShipType() {
+    public int getiD() {
         return iD;
     }
 
-    public void setShipType(int shipType) {
-        this.iD = shipType;
+    public void setiD(int iD) {
+        Ship.iD = iD;
     }
 
-    public int getStartCol() {
-        return startCol;
+    public int gety() {
+        return y;
     }
 
-    public void setStartCol(int startCol) {
-        this.startCol = startCol;
+    public void sety(int y) {
+        Ship.y = y;
     }
 
-    public int getStartRow() {
-        return startRow;
+    public int getx() {
+        return x;
     }
 
-    public void setStartRow(int startRow) {
-        this.startRow = startRow;
+    public void setx(int x) {
+        Ship.x = x;
     }
 }
