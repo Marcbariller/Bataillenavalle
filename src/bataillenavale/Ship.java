@@ -1,4 +1,4 @@
-package bataillenavale;
+package bataillenavale;	
 
 public class Ship {
 
